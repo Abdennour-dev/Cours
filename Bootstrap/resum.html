@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- start text -->
+
+    <p class="text-start text-center text-end">
+      <!-- text-align -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+
+    <p class="text-break text-nowrap">
+      <!-- white-space  word-break -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+    <p class="text-capitalize; text-lowercase; text-uppercase;">
+      <!--text transform-->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+    <p class="fs-1 fs-2 fs-3 fs-4 fs-5 fs-6">
+      <!-- fonts sizes  -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+    <!-- end text -->
+    <!-- start typography -->
+
+    <p class="fw-normal fw-light fw-bold">
+      <!-- font-weight -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+    <p class="lh-1 lh-sm lh-base lh-lg">
+      <!-- line height -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Eum, Lorem ipsum dolor, sit
+      amet consectetur adipisicing elit. Eum, Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Eum, Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Eum,
+    </p>
+    <p class="text-danger text-reset text-success text-black-50">
+      <!-- color red or brown reset color -->
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+    </p>
+    <a class="link-primary text-decoration-none" href="">
+      <!-- text-decoration link-primary ==> color blue  -->
+      google.dz
+    </a>
+
+    <p class="h1">
+      <!-- heading h1 h2 ... h6  -->
+      hello i'm abdennour and you ???
+    </p>
+    <p class="display-1 ... display-6">
+      <!-- heading h1 h2 ... h6  مع تغير خفيف وظريف في النتيجة  -->
+      hello i'm abdennour and you ???
+    </p>
+    <div class="bg-primary bg gradient">
+      <!-- background color  -->
+      hello my father
+    </div>
+    <!-- end typography -->
+    <!-- Start spacing padding margin  -->
+    <div class="p-0 p-1 p-3 px-1 py-2">
+      <!-- 
+      padding 1 ==> 1 = 0.25 rem = 4 px  ,for top bottom left right 
+      px ==> x : horizontal
+      py ==> y : vertical
+      pt ==> padding-top
+      pb ==> padding-bottom
+      ps ==> padding-left
+      pe ==> padding-right
+
+      -->
+      abdennour bouhanna academy padding
+    </div>
+    <div class="m-0 m-3 mx-1 my-2 d-inline-block">
+      <!-- 
+      margin 1 ==> 1 = 0.25 rem ,for top bottom left right 
+      margin  نفس الكلام يطبق على ال
+      d = display 
+      اذا اردت ان تطبق قيمة سلبية 
+     _variables.scss  تذهب لملف 
+   enebal negative margin بداخله تبحث عن 
+    true تجعلها
+  
+                             : والكتابة تكون هكذا    
+    m-n1 = -0.25rem  من كل جهة
+      -->
+      abdennour bouhanna academy margin
+    </div>
+    <div class="d-grid gap-3">
+      <!--
+        1rem = 16 px ;
+         display : grid;
+         gap :3rem;
+        -->
+      <div class="p-2border bg-light">grid item 01</div>
+      <div class="p-2border bg-light">grid item 02</div>
+      <div class="p-2border bg-light">grid item 03</div>
+    </div>
+    <!-- End spacing padding margin  -->
+
+    <!-- Start border & shadow -->
+    <h2 class="bg-light border-top border-5 text-center m-5 p-5">
+      <!-- 
+   border : لونه الافتراضي هو رمادي فاتح
+   sass  لتغير اللون يجب ان تكون على اطلاع بمهارة تسمى
+   main.sass تنشئ ملف
+   bootstrap.sass  تقوم باستدعاء ملف 
+   $border-color وتعدل على متغير 
+
+   يمكن استخدام الالوان التالية الموجودة بالموقع الرسمي والمشهورة والاكثر استخداما
+   border-primary
+   border-success
+   border-danger
+   border-warning .... 
+
+  ---------------------------------
+   border-5 ==> 5 = 5px ; // border-width:5px;
+
+  -----------------------------
+  rounded ==> border-radius
+  rounded-star  , top , bottom
+  rounded-end 
+  rounded-3 
+  rounded-circle ===>  border-radius:50%; 
+  rounded-pill ===> شكل جميل 
+  -->
+      hello it is a test for bootstrap code
+    </h2>
+    <div class="shadow-sm shadow-none">
+      <!-- 
+        box-shadow
+        -----------
+        shadow-none ===> نزع الظل 
+        sahdow-sm ===> ظل خفيف 
+        sahdow- ===> ظل عادي  
+        sahdow-lg ===> ظل قوي     
+      
+      -->
+      testing shadow
+    </div>
+    <!-- End border & shadow -->
+    <!-- Start display & breackpoint -->
+    <div class="d-lg-none d-xl-block bg-primary">
+      <!-- 
+        d-lg-none ===> display:none ; if the width is >= 992px
+        sm = width: >= 576 px;
+        md = width: >= 768 px;
+        lg = width: >= 992 px;
+        xl = width: >= 1200 px;
+        xxl = width: >= 1400 px;
+       -->
+      testing display
+    </div>
+    <!-- End  -->
+    <!-- Start container  -->
+    <div class="container">fixed container</div>
+    <div class="container-fluid">fluide container</div>
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">
+      100% wide until extra extra large breakpoint
+    </div>
+
+    <!-- End  -->
+    <!-- Start flexbox  -->
+    <style>
+      .parent {
+        height: 300px;
+      }
+      .child {
+        width: 400px;
+        height: 100px;
+      }
+    </style>
+    <div
+      class="parent bg-primary d-flex flex-row-reverse justify-content-center align-items-center"
+    >
+      <!--
+        d-flex ===>  display:flex ;
+        for parent:
+   ---------------------
+              flex-nowrap : الافتراضي 
+              flex-wrap
+              flex-row-reverse
+              flex-row : الافتراضي
+              flex-column
+              flex-column-reverse
+              breackpoint يمكن دائما استخدام 
+              flex-md-row : كهذا المثال 
+              justify-content-center
+              align-items-center
+
+          
+      -->
+      <div class="child bg-info">child 01</div>
+      <div class="child bg-warning">child 02</div>
+      <div class="child bg-danger">child 03</div>
+    </div>
+    <!-- End  -->
+    <!-- Start grid-system  -->
+    <div class="row border mt-5 mb-5 text-center">
+      <div class="col-12 border border-2 p-2">1</div>
+      <div class="col-9 border border-2 p-2">2</div>
+      <div class="col-3 border border-2 p-2">3</div>
+      <div class="col-6 border border-2 p-2">4</div>
+      <div class="col-6 border border-2 p-2">5</div>
+    </div>
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
