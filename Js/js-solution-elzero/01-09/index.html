@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <!-- <script>
+      // Code One
+      document.getElementById("el").style.color = "red";
+    </script>
+//html لن يعمل هذا الكود لانه قبل اكواد 
+-->
+    <!-- <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script> 
+window.onload     سيعمل الكود بسبب  
+
+-->
+  </head>
+  <body>
+    <!-- 01 -->
+    <h1 id="el">Page Title</h1>
+    <script>
+      document.getElementById("el").style.color = "red"; // js الطريقة الامثل لكتابة كود
+    </script>
+
+    <!-- 02 -->
+    <script>
+      //01
+      document.write(`<h1 style ="
+            color:blue;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            font-family: Arial
+">Elzero</h1>`);
+
+      document.write("<h2>Elzero</h2>");
+      //02
+      document.querySelector("h2").style.color = "green";
+      //03
+      document.querySelector("h2").style.cssText =
+        "color:green;font-size: 80px;font-weight: bold;text-align: center;font-family: Arial";
+    </script>
+
+    <!-- 03 -->
+    <script>
+      console.log(
+        "%cElzero %cWeb %cSchool ",
+        "color:red;font-size:30px;",
+        "color:green;font-size:30px;",
+        "background-color:blue;color:white;font-size:30px;"
+      );
+    </script>
+
+    <!-- 04 -->
+    <script>
+      console.group("groupe 01");
+      console.log("message 01");
+      console.log("message 02");
+      console.group("groupe 01 02");
+      console.log("message 01");
+      console.log("message 02");
+      console.group("groupe 01 02 01");
+      console.log("message 01");
+      console.log("message 02");
+      console.groupEnd();
+      console.groupEnd();
+      console.groupEnd();
+      console.group("groupe 02");
+      console.log("message 01");
+      console.log("message 02");
+    </script>
+
+    <!-- 05 -->
+    <script>
+      console.table(["abdennour", "walid", "maroua", "nadjiba", "fatima"]);
+    </script>
+
+    <!-- 06 -->
+    <script>
+      //   console.log("Iam In Console");
+      //   document.write("Iam In Page");
+      /*
+      console.log("Iam In Console");
+      document.write("Iam In Page");
+      */
+    </script>
+  </body>
+</html>
