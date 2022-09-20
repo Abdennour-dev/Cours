@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
   </head>
   <body>
     <!-- start text -->
@@ -182,7 +182,14 @@
       }
     </style>
     <div
-      class="parent bg-primary d-flex flex-row-reverse justify-content-center align-items-center"
+      class="
+        parent
+        bg-primary
+        d-flex
+        flex-row-reverse
+        justify-content-center
+        align-items-center
+      "
     >
       <!--
         d-flex ===>  display:flex ;
@@ -215,8 +222,156 @@
       <div class="col-6 border border-2 p-2">5</div>
     </div>
     <!-- End  -->
+
+    <!-- Start navbar -->
+    <!-- 
+                    شرح ممتع وخفيف وهو شرح ارشادي لتسهيل عملية الفهم
+
+    1- nav : 
+         navbar  : لكي يعرف انه نافبار          
+         navbar-expand : ul li ليظهر 
+         fixed-top : display : fixed; لابقاء الهيدر ثابتا اي 
+
+
+    2- a :
+         navbar-brand : نضعها لكتابة على اساس تكون هي اللوجو
+
+    3- button :
+
+         navbar-toggler : ليعرف انه قائمة منسدلة
+         data-bs-toggle="collapse" : div ليتصل بال 
+         data-bs-target="#navlinks" : div (ul الذي تقع بداخله) ل id يجب ان نضع 
+
+                            لكي نضع بداخله كلاس الايقونة  span  يأتي بداخله      
+       span :
+         
+         navbar-toggler-icon : لكي تظهر لنا ايقونة هامبرغر المعروفة
+    
+    4- div (ul الذي تقع بداخله)  :
+
+         collapse , navbar-collapse : نضع داخله هذين الكلاسين لكي يجمع لنا القائمة المنسدلة ويشعها أفقيا 
+        
+    5- ul :
+        
+        navbar-nav : لكي تعرف انها قائمة 
+        
+        ms-auto : لجعلها في أقصى اليمين
+
+    6- li ,a :   
+        
+        nav-item : li ليعرف اننا نؤشر على
+        
+        nav-link : a ليعرف انه يؤشر على
+
+        ---------------------------------------------------------
+        article : سنقوم باضافة قائمة منسدلة على العنصر في الهيدر
+    1- li :
+        
+        dropdown : لتحديد اي ستكون القائمة
+              
+          2- a (li الموجود داخل ال )    
+              
+              class="nav-link dropdown-toggle" : كلاس القائمة المنسدلة على الرابط
+            
+              data-bs-toggle="dropdown" داتا القائمة المنسدلة 
+
+
+                 3- ul(li الموجودة داخل ):
+                      dropdown-menu : لتحديد ان هذه هي القائمة المنسدلة التي تحوي البيانات التي ستسنسدل 
+
+                      dropdown-menu-dark : الخلفية سوداء وملائمة للتصميم 
+
+                 4- li (المنسدلة  ul الموجودة داخل ال ) :
+                      
+                      dropdown-item : المنسدل   li لتحديد 
+                      
+        
+      -->
+    <style>
+      @media (max-width: 991px) {
+        .collapse:not(.show) {
+          display: block;
+          clip-path: circle(0% at 100% 0);
+          visibility: hidden;
+        }
+        .navbar-collapse {
+          width: 100%;
+          height: 200px;
+          position: absolute;
+          top: 56px;
+          right: 0;
+          background-color: #212529;
+          clip-path: circle(141.7% at 100% 0);
+          visibility: visible;
+          transition: 0.5s;
+        }
+        .navbar-toggler:focus {
+          box-shadow: none;
+        }
+      }
+      .nav-item {
+        text-transform: capitalize;
+      }
+    </style>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          bootstrap
+          <img src="#" alt="" width="30px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navlinks"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navlinks">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="">home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="">contact</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href=""
+                >articles</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="">article 01</a></li>
+                <li><a class="dropdown-item" href="">article 02</a></li>
+                <li><a class="dropdown-item" href="">article 03</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">portfolio</a>
+              <!-- disabled : لمنع اي مستعمل من الكليك عليه اي يصبح شفاف-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+
     <!-- Start  -->
     <!-- End  -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <!-- Start  -->
+    <!-- End  -->
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
